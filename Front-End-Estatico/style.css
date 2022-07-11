@@ -29,6 +29,7 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    z-index: 1;
 }
 
 
@@ -39,4 +40,10 @@
 .botones{
     padding-left: 7.5%;
     margin-top: 10px;
+}
+
+#info-icon{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
 }

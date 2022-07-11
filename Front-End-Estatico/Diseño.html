@@ -22,30 +22,30 @@
             <!--COMIENZO MODULO DE COLUMNA-->
             <div class="container">
                 <div class="row">
-                    <!--COMIENZO COLUMNA 1-->
-                    <div class="col">
-                        <div id="info" style="padding: 16">
+                    <!--COMIENZO COLUMNA 1 (Foto de perfil, datos basicos)-->
+                    <div class="col-6">
+                        <div id="profile-foto">
                             <div>
                                 <img class="profile-image" src="https://scontent.fcor2-1.fna.fbcdn.net/v/t39.30808-6/271544165_10223561690261841_3783471209112090162_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=1uhXoMQx27wAX_MWSvn&_nc_ht=scontent.fcor2-1.fna&oh=00_AT_PdljuxRT4q_IswAkrOPkaWtGZof0PhNYlQo3FV8DgaQ&oe=62D17B78">
+                                <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen" style="color:black"></i></a></div>
                             </div>
                         </div>
-                        <div>
+                        <div id="info-basica">
+                            <h1>Jeremias Peralta</h1>
+                            <div id="puesto">
+                                <h4 class="subtitulo">Desarrollador Full Stack Jr</h4>
+                            </div>
                             <div>
-                                <h1>Jeremias Peralta</h1>
-                                <div>
-                                    <h4 class="subtitulo">Desarrollador Full Stack Jr</h4>
-                                </div>
-                                <div>
-                                    <span>Ciudad - Provincia - Argentina</span>
-                                    <span><a href="#">Informacion de Contacto</a></span>
-                                </div>
+                                <span>Ciudad - Provincia - Argentina</span>
+                                <span><a href="#">Informacion de Contacto</a></span>
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <!--FIN COLUMNA 1-->
 
+
                     <!--COMIENZO COLUMNA 2-->
-                    <div class="col">
+                    <div class="col-6">
                         <ul id="info-details">
                             <li><a href="#">
                                 <img class="profile-image" src="https://www.unrc.edu.ar/imgs/top-a-cel.png">
@@ -66,19 +66,30 @@
     </div>
     <!--Acerca de mi-->
     <div class="borde-seccion">
-        <h1 class="titulo">Acerca de mi</h1>
-        <p>Programador Full Stack Jr con habilidades en HTML, CSS, Angular, etc</p>
+        
+        <div id="info-icon" onclick="cambiar_parrafo()">
+            <h1 class="titulo">Acerca de mi</h1>
+            <a href="#" class="btn-right">
+                <i class="fa fa-pen"></i>
+            </a>
+        </div>
+        <div id="descrip-acercade">
+            <p>Programador Full Stack Jr con habilidades en HTML, CSS, Angular, etc</p>
+        </div>
+
+
+        
     </div>
     <!--Experiencia laboral y Educacion-->
     <div class="borde-seccion">
-        <div>
+        <div id="experiencia">
             <h1 class="titulo">Experiencia</h1>
             <h2>Administrativo</h2>
             <p style="font-weight:bold">Roberto de Angelo y Asociados S.A - Jornada Completa</p>
             <h4 class="subtitulo">(Ene 2021-Feb 2022) - 1 año</h4>
             <h4 class="subtitulo">Ciudad - Provincia</h4>
         </div>
-        <div>
+        <div id="educacion">
             <h1 class="titulo">Educacion</h1>
             <ul>
                 <li>
@@ -121,9 +132,8 @@
         </div>
     </div>
 
-    <h1>HOLA</h1>
     
-
+    <script src="https://kit.fontawesome.com/113f501775.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin= "anonymous"></script>
