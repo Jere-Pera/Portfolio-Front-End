@@ -1,0 +1,168 @@
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color:rgb(3, 131, 190);
+}
+
+/*Estilos Primera seccion*/
+
+.mat-card#first-card{
+    padding: 0;
+}
+
+#info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20%;
+}
+
+img {
+    width:100%;
+    height:30em;
+    border-radius: 32px 32px 0px 0px;
+    z-index: 1;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -80px;
+    margin-left: 2em;
+    z-index: 2;
+    
+}
+
+div#btn-profile{
+    width: 5em;
+    height: 2em;
+    margin: -30px 0px 0px 10px;
+    padding-top: 0px;
+    padding-left: 180px;
+    z-index: 3;
+}
+
+.li-imagen{
+    width: 170px;
+    height: 100px;
+    margin-right: 0px;
+}
+
+#li-info1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit(170px, auto));
+}
+
+
+ul{
+    list-style: none;
+   
+}
+
+#info-actions{
+    display:flex;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+/*Fin estilos Primera seccion*/
+
+/*Estilos Segunda seccion*/
+
+.info-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0 0;
+}
+
+#lapiz-profile{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: black; 
+    font-size:large;
+}
+
+#lapiz-acercade{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: black; 
+    font-size:large;
+}
+
+div#experiencia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+/*Fin estilos Segunda seccion*/
+
+/*Estilos Tercera seccion*/
+
+#lapiz-exp{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: black; 
+    font-size:large;
+}
+
+#lapiz-edu{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: black; 
+    font-size:large;
+}
+
+i#lapiz-exp-li{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: black; 
+    font-size:large;
+}
+
+.exp-edu-titulo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.exp-edu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 50px;
+}
+
+.info-exp-edu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icon-add-del{
+    display:grid;
+    grid-template-columns: 1fr minmax(auto, 10%);
+    gap: -10em;
+}
+
+
+
+/*Fin estilos Tercera Seccion*/
+
+/*Estilos Cuarta Seccion*/
+
+#hard-soft-skills-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#hard-soft-lapiz{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    color: black; 
+    font-size:large;
+}
