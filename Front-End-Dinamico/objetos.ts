@@ -14,28 +14,28 @@ let pofolio: Persona={
 
 function GetNombre(nombre: string):void{
     const nombre1 = document.getElementById("Nombre");
-    nombre1.textContent = nombre;
+    nombre1!.textContent = nombre;
 }
 
 function GetApellido(apellido: string):string{
     const a = document.getElementById("Apellido");
-    a.textContent=apellido;
+    a!.textContent=apellido;
     return pofolio.Apellido=apellido;
 }
 
 function GetAcercade(acercade:string):string{
     const a = document.getElementById("descrip-acercade");
-    a.textContent=acercade;
+    a!.textContent=acercade;
     return pofolio.Acercade=acercade;
 }
 
 function GetTitulos(titulo1:string, titulo2:string):string{
     const a = document.getElementById("Titulos");
-    a.textContent=titulo1, titulo2;
+    a!.textContent=titulo1, titulo2;
     return pofolio.Titulos[0]=titulo1, pofolio.Titulos[1]=titulo2;
 }
 
-function showFile1(input): void{
+function showFile1(input: any): void{
     let file = input.files[0];
     //alert('File name: ${file.name}'); //e.g my.png
     //alert('Last modified: ${file.lastModified}'); //e.g 1552830408824
@@ -43,7 +43,7 @@ function showFile1(input): void{
     let reader = new FileReader();
     reader.readAsText(file);
     reader.onload = function(progressEvent){
-        var s=reader.result?.toString();
+        var s = reader.result!.toString();
         console.log(s);
         var arr = s.split('\n');
         GetAcercade(arr[0]);
